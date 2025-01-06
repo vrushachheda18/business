@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Handmade Crafts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Local Handmade Crafts</h1>
+        <p>Discover unique, locally crafted items!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart" onclick="showCart()">Cart (<span id="cart-count">0</span>)</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container" id="products">
+        <h2>Our Handmade Items</h2>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow1">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\jute animals.jpeg" class="active" alt="Jute Horse">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\WhatsApp Image 2025-01-06 at 1.10.56 PM.jpeg" alt="Jute Horse">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\WhatsApp Image 2025-01-06 at 1.11.50 PM.jpeg" alt="Jute Horse">
+            </div>
+            <div class="product-details">
+                <h3>Jute Animals</h3>
+                <p>₹250.00</p>
+                <button onclick="addToCart('Jute Horse', 250.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow2">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\pots1.jpg" class="active" alt="Pottery">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 132119.png" alt="Pottery">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 132154.png" alt="Pottery">
+            </div>
+            <div class="product-details">
+                <h3>Pots</h3>
+                <p>₹600.00</p>
+                <button onclick="addToCart('Pottery', 600.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow3">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\handbag1.jpg" class="active" alt="Knitted Bag">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\handbag2.jpeg" alt="Knitted Bag">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 133121.png" alt="Knitted Bag">
+            </div>
+            <div class="product-details">
+                <h3>Knitted Handcraft Bags</h3>
+                <p>₹400.00</p>
+                <button onclick="addToCart('Knitted Handcraft Bags', 400.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow4">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 133916.png" class="active" alt="Channapatna Toys">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 133839.png" alt="Channapatna Toys">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\ctoys.jpeg" alt="Channapatna Toys">
+            </div>
+            <div class="product-details">
+                <h3>Channapatna Toys</h3>
+                <p>₹150.00</p>
+                <button onclick="addToCart('Channapatna Toys', 150.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow5">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\localpainting.jpg" class="active" alt="Paintings">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\painting2.jpeg" alt="Paintings">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\painting3.jpg" alt="Paintings">
+            </div>
+            <div class="product-details">
+                <h3>Paintings</h3>
+                <p>₹550.00</p>
+                <button onclick="addToCart('Paintings', 550.00)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="slideshow" id="slideshow6">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\basket2.jpg" class="active" alt="Bamboo Baskets">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\Screenshot 2025-01-06 134620.png" alt="Bamboo Baskets">
+                <img src="C:\Users\Admin\Desktop\Local Handcraft Website\basket1.jpg" alt="Bamboo Baskets">
+            </div>
+            <div class="product-details">
+                <h3>Bamboo Baskets</h3>
+                <p>₹120.00</p>
+                <button onclick="addToCart('Bamboo Baskets', 120.00)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="cart" class="container">
+        <h2>Your Cart</h2>
+        <p>Your cart is currently empty.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Local Handmade Crafts | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
